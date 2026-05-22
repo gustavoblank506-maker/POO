@@ -22,6 +22,9 @@ class Pessoa {
     consultarProfissao(){
         console.log(`Profissão: ${this.profissao}`);
     }
+    mostrarCPF(){
+        console.log(`CPF: ${this.cpf}`);
+    }
 }
 
 //instanciando objetos da classe Pessoa
@@ -36,6 +39,8 @@ pessoa1.fazerAniversario();
 pessoa1.mostrarDetalhes();
 
 pessoa1.consultarProfissao();
+
+pessoa1.mostrarCPF();
 
 console.log("-------------------");
 
@@ -52,3 +57,5 @@ pessoa2.fazerAniversario();
 pessoa2.mostrarDetalhes();
 
 pessoa2.consultarProfissao();
+
+pessoa2.mostrarCPF();
