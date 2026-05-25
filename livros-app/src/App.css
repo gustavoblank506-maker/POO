@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  color: #e94560;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 2px;
+}
+
+.busca {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+
+.busca input {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  background: #ffffff15;
+  color: white;
+  outline: 2px solid #e9456050;
+}
+
+.busca input::placeholder {
+  color: #ffffff70;
+}
+
+.busca button {
+  padding: 14px 28px;
+  background: #e94560;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.busca button:hover {
+  background: #c73652;
+}
+
+.livro {
+  background: #ffffff10;
+  border-radius: 16px;
+  padding: 30px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.livro img {
+  width: 130px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 8px 24px #00000060;
+}
+
+.livro h2 {
+  font-size: 1.4rem;
+  color: #e94560;
+  margin-bottom: 8px;
+}
+
+.livro p {
+  color: #ffffffaa;
+  margin-bottom: 4px;
+}
+
+.lojas ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.lojas h3 {
+  color: white;
+  margin-bottom: 16px;
+}
+
+.lojas a {
+  display: block;
+  padding: 14px;
+  border-radius: 12px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: opacity 0.3s;
+}
+
+.lojas a:hover {
+  opacity: 0.85;
+}
+
+.lojas li:nth-child(1) a { background: #ff9900; color: #111; }
+.lojas li:nth-child(2) a { background: #8b0000; color: white; }
+.lojas li:nth-child(3) a { background: #0066cc; color: white; }
+
+.carregando {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.erro {
+  color: #ff4d4d;
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid #ffffff30;
+  border-top-color: #e94560;
+  border-radius: 50%;
+  margin: 20px auto;
+  animation: girar 0.8s linear infinite;
+}
+
+@keyframes girar {
+  to {
+    transform: rotate(360deg);
+  }
+}
